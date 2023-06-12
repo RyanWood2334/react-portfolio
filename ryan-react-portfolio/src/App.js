@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutMe from "./components/pages/AboutMe";
 import Resume from "./components/pages/Resume";
 import Projects from "./components/pages/Projects";
-import Contact from "./components/pages/Contact";
 import NavTabs from "./components/Navbar";
 import "./index.css";
 
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/about" element={<AboutMe />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Projects />} />
       </Routes>
     </BrowserRouter>

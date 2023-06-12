@@ -21,11 +21,6 @@ function NavBar() {
           Resume
         </Link>
       </li>
-      <li className="nav-item">
-        <Link className="nav-link text-white" to="/Contact">
-          Contact
-        </Link>
-      </li>
     </ul>
   );
 }

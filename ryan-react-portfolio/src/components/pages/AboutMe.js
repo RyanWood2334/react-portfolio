@@ -6,13 +6,17 @@ import React from "react";
 
 export default function About() {
   const cardStyle = {
-    // width: '25rem',
-    margin: "0",
-    height: "100vh",
-    display: "grid",
+    width: "50%",
+    margin: "0 auto",
+    marginTop: "20vh",
+    padding: "2rem",
+    backgroundColor: "#E1A419",
+    display: "flex",
+    flexDirection: "column",
     alignItems: "center",
-    justifyItems: "center",
-    backgroundImage: "linear-gradient(to top, #000000 0%, #f9f586 100%)",
+    justifyContent: "center",
+    borderRadius: "8px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
   };
   return (
     <div>
@@ -47,27 +51,12 @@ export default function About() {
                 experience. I understand the importance of teamwork,
                 adaptability, and problem-solving under pressure. I bring a
                 fresh perspective to the table, fueled by my passion for both
-                the digital and natural worlds. When I'm not coding, you'll find
-                me exploring the great outdoors, conquering new peaks, and
-                embracing the thrill of adventure. I believe that the same
-                determination and tenacity that drive me on the mountainside
-                will propel me to success in the world of coding. I'm excited to
-                collaborate with like-minded individuals and organizations,
-                leveraging my skills and background to create meaningful and
-                impactful software solutions. Let's embark on this coding
-                journey together! Feel free to reach out and connect. I'm always
-                up for a new coding challenge or a climbing/skiing adventure!
-              </div>
-              <div className="actions">
-                <button>
-                  <i className="far fa-heart"></i>
-                </button>
-                <button>
-                  <i className="far fa-envelope"></i>
-                </button>
-                <button>
-                  <i className="fas fa-user-friends"></i>
-                </button>
+                the digital and natural worlds. I'm excited to collaborate with
+                like-minded individuals and organizations, leveraging my skills
+                and background to create meaningful and impactful software
+                solutions. Let's embark on this coding journey together! Feel
+                free to reach out and connect. I'm always up for a new coding
+                challenge or a climbing/skiing adventure!
               </div>
             </div>
           </div>
