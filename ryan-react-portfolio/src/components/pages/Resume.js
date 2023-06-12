@@ -50,7 +50,7 @@ export default function Resume() {
   };
   return (
     <div style={cardContainerStyle}>
-      <div className="container" style={{ width: "80%" }}>
+      <div className="container" style={{ width: "100%" }}>
         <div className="row justify-content-center">
           <div className="col-md-6">
             <div className="card text-center" style={cardStyle}>

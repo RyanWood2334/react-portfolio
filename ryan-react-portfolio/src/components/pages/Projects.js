@@ -49,24 +49,15 @@ export default function Display() {
       id: 6,
       name: "Brewery Foolery",
       description:
-        "This application allows you to search for breweries in your area, and provides you and your friends fun trivia to use at the brewery you find and head out to!",
+        "Thsi application allows you to search for breweries in your area, and provides you and your friends fun trivia to use at the brewery you find and head out to!",
       photo: brewery,
       link: "https://github.com/fevercatdream/brewery-foolery",
     },
   ];
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-        gap: "20px",
-        padding: "20px",
-      }}
-    >
-      {projects.map((project) => (
-        <Card key={project.id} style={cardSize} project={project} />
-      ))}
+    <div>
+      <Card projects={projects} />
     </div>
   );
 }

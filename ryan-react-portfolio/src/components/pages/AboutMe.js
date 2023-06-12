@@ -6,7 +6,7 @@ import React from "react";
 
 export default function About() {
   const cardStyle = {
-    width: "50%",
+    width: "80%",
     margin: "0 auto",
     padding: "2rem",
     background: "linear-gradient(to bottom, #E1A419, #C48711, #A1660A)",
@@ -18,20 +18,18 @@ export default function About() {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
   };
 
-  const textStyle = {
-    textAlign: "center",
-    color: "#FFF",
-    marginBottom: "1rem",
-  };
-
   const titleStyle = {
     fontSize: "1.5rem",
+    color: "black",
+    textAlign: "center",
   };
 
   const descStyle = {
+    textAlign: "center",
+    color: "black",
+    marginBottom: "1rem",
     fontSize: "1rem",
     lineHeight: "1.5",
-    textAlign: "justify",
   };
 
   return (
@@ -41,15 +39,20 @@ export default function About() {
           <div className="col-12 card-text2">
             <div className="portada"></div>
             <div className="title-total">
-              <div className="title" style={(textStyle, titleStyle)}>
+              <div className="title" style={titleStyle}>
                 Full Stack Developer & Ski Patroller/Mountain Guide
               </div>
               <h2>Ryan Wood</h2>
 
-              <div className="desc" style={(textStyle, descStyle)}>
-                Hi there! I'm a passionate and adventurous individual who
-                recently made a bold career transition into the world of coding.
-                ...
+              <div className="desc" style={descStyle}>
+                I am a versatile professional with expertise in JavaScript,
+                React, Node.js, and MongoDB. With a strong foundation in web
+                development, I have gained proficiency in multiple frameworks
+                and technologies. As a ski patrol supervisor for seven years, I
+                provided medical care, led a team of patrollers, and utilized
+                explosives for avalanche control. My experience in high-stress
+                environments has honed my leadership and teamwork skills,
+                enabling me to make critical decisions with composure.
               </div>
             </div>
           </div>
