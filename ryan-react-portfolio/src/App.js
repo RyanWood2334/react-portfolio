@@ -1,23 +1,21 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
+import AboutMe from "./components/pages/AboutMe";
 import Resume from "./components/pages/Resume";
-import Portfolio from "./components/pages/Portfolio";
+import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
-import NavTabs from "./components/NavTabs";
+import NavTabs from "./components/Navbar";
+import "./index.css";
 
 const App = () => {
   return (
     <BrowserRouter>
       <NavTabs />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="/portfolio" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );

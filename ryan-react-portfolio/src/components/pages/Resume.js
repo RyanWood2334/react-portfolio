@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../assets/res.png";
 
 export default function Resume() {
   const color = {
